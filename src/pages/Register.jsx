@@ -64,14 +64,14 @@ export default function Register() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
                         </div>
-                        <h2 className="text-xl font-bold text-[#ededed] mb-2">Verifique seu email!</h2>
+                        <h2 className="text-xl font-bold text-[#ededed] mb-2">Conta Criada!</h2>
                         <p className="text-gray-400 text-sm mb-8 leading-relaxed">
-                            Enviamos um link de confirmação para <span className="text-[#3ecf8e] font-medium">{email}</span>.
-                            Confirme seu cadastro para começar a usar o ModernApp.
+                            Sua conta no <span className="text-[#3ecf8e] font-medium">Zenith Finance</span> foi criada com sucesso.
+                            Você já pode entrar e começar a transformar sua vida financeira.
                         </p>
                         <Link to="/login">
-                            <Button variant="secondary" className="w-full">
-                                Voltar para o Login
+                            <Button variant="primary" className="w-full">
+                                Acessar Minha Conta
                             </Button>
                         </Link>
                     </div>
