@@ -6,8 +6,8 @@ const LandingNavbar = () => {
         <nav className="landing-navbar-container">
             <div className="landing-navbar">
                 <div className="landing-logo">
-                    <div className="logo-icon"></div>
-                    <span className="logo-text">ModernApp</span>
+                    <img src="/favicon.png" alt="Zenith Logo" className="logo-img-nav" />
+                    <span className="logo-text">Zenith</span>
                 </div>
 
                 <div className="landing-nav-links">

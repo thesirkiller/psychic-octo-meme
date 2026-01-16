@@ -21,10 +21,8 @@ export default function Navbar() {
         <nav className="fixed top-0 left-0 right-0 h-16 bg-black/20 backdrop-blur-xl border-b border-white/5 z-50">
             <div className="max-w-[1400px] mx-auto h-full flex items-center justify-between px-8">
                 <Link to="/dashboard" className="text-xl font-bold flex items-center gap-2 text-emerald-500">
-                    <div className="w-6 h-6 bg-emerald-500 rounded flex items-center justify-center">
-                        <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse-subtle"></div>
-                    </div>
-                    ModernApp
+                    <img src="/favicon.png" alt="Zenith Logo" className="w-8 h-8 object-contain filter drop-shadow-[0_0_8px_rgba(62,207,142,0.3)] rounded-md" />
+                    Zenith
                 </Link>
 
                 <div className="flex items-center gap-4">

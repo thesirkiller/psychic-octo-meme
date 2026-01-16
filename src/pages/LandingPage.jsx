@@ -7,13 +7,13 @@ const LandingPage = () => {
         <div className="landing-container">
             <LandingNavbar />
             <section className="hero-section reveal">
-                <div className="hero-tag fade-in">A Próxima Geração de Gestão Financeira</div>
+                <div className="hero-tag fade-in">O Ápice da sua Inteligência Financeira</div>
                 <h1 className="hero-title slide-up">
-                    Suas finanças em um <br /> estado de clareza.
+                    Alcance o Zenith do seu <br /> sucesso financeiro.
                 </h1>
                 <p className="hero-subtitle slide-up delay-1">
-                    Uma experiência fluida e poderosa para gerenciar seu patrimônio,
-                    acompanhar gastos e alcançar a liberdade financeira com tecnologia de ponta.
+                    Uma plataforma de elite projetada para quem busca clareza absoluta,
+                    controle total e crescimento contínuo do seu patrimônio.
                 </p>
 
                 <div className="hero-cta slide-up delay-2">

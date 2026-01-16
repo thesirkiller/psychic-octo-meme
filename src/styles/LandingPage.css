@@ -123,12 +123,12 @@ html {
     gap: 12px;
 }
 
-.logo-icon {
-    width: 20px;
-    height: 20px;
-    background: #3ecf8e;
-    border-radius: 6px;
-    box-shadow: 0 0 15px rgba(62, 207, 142, 0.5);
+.logo-img-nav {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(62, 207, 142, 0.3));
+    border-radius: 4px;
 }
 
 .logo-text {
