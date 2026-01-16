@@ -1,4 +1,5 @@
 import LandingNavbar from '../components/LandingNavbar'
+import { Link } from 'react-router-dom'
 import '../styles/LandingPage.css'
 
 const LandingPage = () => {

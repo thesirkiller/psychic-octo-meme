@@ -6,21 +6,10 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>modern-frontend-starter</title>
-  <script>
-    console.log('DEBUG: index.html loaded');
-    window.onload = () => {
-      console.log('DEBUG: window execution started');
-      if (!document.getElementById('root').innerHTML) {
-        console.log('DEBUG: Root is empty, waiting for React...');
-      }
-    };
-  </script>
 </head>
 
 <body>
   <div id="root"></div>
-  <!-- Mensagem de fallback caso tudo falhe -->
-  <noscript>Ative o JavaScript para rodar este App.</noscript>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
