@@ -20,7 +20,7 @@ export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 right-0 h-16 bg-black/20 backdrop-blur-xl border-b border-white/5 z-50">
             <div className="max-w-[1400px] mx-auto h-full flex items-center justify-between px-8">
-                <Link to="/" className="text-xl font-bold flex items-center gap-2 text-emerald-500">
+                <Link to="/dashboard" className="text-xl font-bold flex items-center gap-2 text-emerald-500">
                     <div className="w-6 h-6 bg-emerald-500 rounded flex items-center justify-center">
                         <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse-subtle"></div>
                     </div>
@@ -29,10 +29,10 @@ export default function Navbar() {
 
                 <div className="flex items-center gap-4">
                     <Link
-                        to="/"
-                        className={`${linkBaseClass} ${isActive('/') ? activeClass : inactiveClass}`}
+                        to="/dashboard"
+                        className={`${linkBaseClass} ${isActive('/dashboard') ? activeClass : inactiveClass}`}
                     >
-                        Tarefas
+                        Início
                     </Link>
                     <Link
                         to="/transactions"

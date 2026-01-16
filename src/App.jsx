@@ -25,13 +25,7 @@ function App() {
         <Route
           path="/"
           element={
-            user ? (
-              <ProtectedRoute>
-                <Home />
-              </ProtectedRoute>
-            ) : (
-              <LandingPage />
-            )
+            user ? <Navigate to="/dashboard" replace /> : <LandingPage />
           }
         />
         <Route
