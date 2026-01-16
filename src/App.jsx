@@ -4,6 +4,7 @@ import Transactions from './pages/Transactions'
 import FinanceDashboard from './pages/FinanceDashboard'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import LandingPage from './pages/LandingPage'
 import ProtectedRoute from './components/ProtectedRoute'
 import { useAuth } from './hooks/useAuth'
 
@@ -23,6 +24,18 @@ function App() {
       <Routes>
         <Route
           path="/"
+          element={
+            user ? (
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
+            ) : (
+              <LandingPage />
+            )
+          }
+        />
+        <Route
+          path="/dashboard"
           element={
             <ProtectedRoute>
               <Home />
@@ -47,11 +60,11 @@ function App() {
         />
         <Route
           path="/login"
-          element={user ? <Navigate to="/" replace /> : <Login />}
+          element={user ? <Navigate to="/dashboard" replace /> : <Login />}
         />
         <Route
           path="/register"
-          element={user ? <Navigate to="/" replace /> : <Register />}
+          element={user ? <Navigate to="/dashboard" replace /> : <Register />}
         />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
