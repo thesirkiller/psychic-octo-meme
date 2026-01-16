@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import LandingNavbar from '../components/LandingNavbar'
 import '../styles/LandingPage.css'
 
 const LandingPage = () => {
     return (
         <div className="landing-container">
+            <LandingNavbar />
             <section className="hero-section">
                 <div className="hero-tag">A Próxima Geração de Gestão Financeira</div>
                 <h1 className="hero-title">
