@@ -9,8 +9,8 @@ export default function StatCard({ title, value, icon, color = 'primary', classN
     }
 
     return (
-        <div className={`glass p-6 rounded-3xl flex items-center gap-4 transition-all hover:bg-white/[0.05] hover:scale-[1.02] hover:shadow-2xl border-t border-white/10 ${className}`}>
-            <div className={`p-3 rounded-2xl backdrop-blur-md border border-white/10 ${colorClasses[color] || colorClasses.primary}`}>
+        <div className={`glass-light glass-border-top glass-inner-glow p-6 rounded-3xl flex items-center gap-4 transition-all duration-400 hover:backdrop-blur-[35px] hover:brightness-105 hover:scale-[1.02] hover:shadow-2xl ${className}`}>
+            <div className={`p-3 rounded-2xl glass-medium backdrop-blur-md ${colorClasses[color] || colorClasses.primary}`}>
                 {icon}
             </div>
             <div>

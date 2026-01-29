@@ -1,6 +1,6 @@
 export default function Input({ label, error, type = 'text', className = '', options = [], ...props }) {
-    const baseStyles = "w-full px-4 py-3 bg-white/5 text-[#ededed] border rounded-xl outline-none transition-all placeholder:text-gray-600 hover:border-white/20 focus:ring-1 focus:ring-[#3ecf8e]/30 focus:border-[#3ecf8e] backdrop-blur-md";
-    const borderStyle = error ? 'border-red-500/50' : 'border-white/10';
+    const baseStyles = "w-full px-4 py-3 glass-medium glass-border-top text-[#ededed] rounded-xl outline-none transition-all duration-400 placeholder:text-gray-500 hover:backdrop-blur-[30px] hover:brightness-110 focus:ring-2 focus:ring-[#3ecf8e]/30 focus:border-[#3ecf8e] focus:backdrop-blur-[35px] focus:brightness-110 glass-active";
+    const borderStyle = error ? 'border-red-500/50 focus:border-red-500' : 'border-white/10';
 
     return (
         <div className="w-full">

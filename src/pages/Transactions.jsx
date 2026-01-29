@@ -42,7 +42,7 @@ export default function Transactions() {
     }
 
     return (
-        <div className="min-h-screen bg-[#0a0a0a] pt-24 pb-12 px-8 transition-colors">
+        <div className="min-h-screen bg-[#0a0a0a] pt-20 pb-12 px-8 transition-colors">
             <Navbar />
 
             <div className="max-w-[1400px] mx-auto">

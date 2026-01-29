@@ -13,12 +13,12 @@ export default function Navbar() {
 
     const isActive = (path) => location.pathname === path
 
-    const linkBaseClass = "text-xs font-bold transition-all uppercase tracking-widest px-3 py-1 rounded-lg"
-    const activeClass = "text-emerald-500 border border-emerald-500/20 bg-emerald-500/5 shadow-[0_0_15px_rgba(62,207,142,0.1)]"
-    const inactiveClass = "text-gray-400 hover:text-white"
+    const linkBaseClass = "text-xs font-bold transition-all duration-400 uppercase tracking-widest px-3 py-1.5 rounded-lg"
+    const activeClass = "text-emerald-400 glass-heavy glass-shimmer shadow-[0_0_20px_rgba(62,207,142,0.15)]"
+    const inactiveClass = "text-gray-400 hover:text-white hover:bg-white/5 hover:backdrop-blur-md"
 
     return (
-        <nav className="fixed top-0 left-0 right-0 h-16 bg-black/20 backdrop-blur-xl border-b border-white/5 z-50">
+        <nav className="fixed top-0 left-0 right-0 h-16 glass-frosted glass-border-top border-b border-white/10 z-50 transition-all duration-400">
             <div className="max-w-[1400px] mx-auto h-full flex items-center justify-between px-8">
                 <Link to="/dashboard" className="text-xl font-bold flex items-center gap-2 text-emerald-500">
                     <img src="/favicon.png" alt="Zenith Logo" className="w-8 h-8 object-contain filter drop-shadow-[0_0_8px_rgba(62,207,142,0.3)] rounded-md" />
@@ -51,7 +51,7 @@ export default function Navbar() {
                             <span className="text-xs text-gray-400 hidden sm:block">{user.email}</span>
                             <button
                                 onClick={handleLogout}
-                                className="px-3 py-1.5 text-xs font-semibold text-[#3ecf8e] hover:text-[#4ade80] transition-all border border-[#3ecf8e]/20 rounded-md bg-[#3ecf8e]/5 hover:bg-[#3ecf8e]/10 uppercase tracking-wider"
+                                className="px-3 py-1.5 rounded-md text-xs font-semibold text-[#3ecf8e] hover:text-[#4ade80] transition-all duration-400 glass-medium hover:backdrop-blur-[30px] hover:brightness-110 uppercase tracking-wider relative overflow-hidden"
                             >
                                 Sair
                             </button>

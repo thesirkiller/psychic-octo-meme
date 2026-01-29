@@ -1,8 +1,8 @@
 export default function Button({ children, type = 'button', variant = 'primary', loading, className = '', ...props }) {
     const variants = {
-        primary: 'bg-[#3ecf8e] text-[#000000] hover:bg-[#4ade80] active:scale-[0.96] shadow-xl shadow-emerald-500/20 border-t border-white/20',
-        secondary: 'glass-dark text-[#ededed] hover:bg-white/10 active:scale-[0.96] shadow-xl border-t border-white/10',
-        danger: 'bg-red-500/10 text-red-500 border border-red-500/20 hover:bg-red-500 hover:text-white active:scale-[0.96]',
+        primary: 'bg-[#3ecf8e] text-[#000000] hover:bg-[#4ade80] hover:shadow-2xl hover:shadow-emerald-500/30 active:scale-[0.97] shadow-xl shadow-emerald-500/20 border-t border-white/20 glass-border-top transition-all duration-400',
+        secondary: 'glass-heavy glass-shimmer glass-reflection text-[#ededed] hover:backdrop-blur-[30px] hover:brightness-110 active:scale-[0.97] shadow-xl transition-all duration-400',
+        danger: 'glass-medium text-red-400 border border-red-500/30 hover:bg-red-500/20 hover:border-red-500/50 hover:text-red-300 active:scale-[0.97] transition-all duration-400',
     }
 
     return (
